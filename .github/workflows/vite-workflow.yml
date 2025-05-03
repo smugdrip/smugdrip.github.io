@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: lts/*
           cache: 'npm'
-          cache-dependency-path: ./ePortfolio-Bootstrap/package-lock.json
+          cache-dependency-path: ./my-portfolio/package-lock.json
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './my-portfolio/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
