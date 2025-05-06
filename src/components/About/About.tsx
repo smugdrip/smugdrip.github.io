@@ -1,9 +1,10 @@
+import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 import meImg from "../../assets/me.jpg";
 import Layout from '../Layout/Layout';
 
-function About() {
+const About: React.FC = () => {
   return (
     <Layout>
       <Container>

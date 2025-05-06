@@ -1,9 +1,7 @@
-import { Component } from "react";
 import Layout from "../Layout/Layout";
 import { Col, Container, Row } from "react-bootstrap";
 
-
-function Projects() {
+const Projects: React.FC = () => {
 
     return(
         <Layout>
