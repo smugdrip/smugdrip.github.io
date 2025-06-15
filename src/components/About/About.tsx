@@ -73,10 +73,16 @@ const About: React.FC = () => {
             </h2>
             
             <h3 className="mt-2">Primary Programming Languages</h3>
-            <p className="abt-text p-2">C, Python, Java, JavaScript, Solidity, HTML/CSS</p>
+            <p>
+              <i>these are languages i've used for larger projects</i>
+            </p>
+            <p className="abt-text p-2 ms-2">C, Python, Java, JavaScript, Solidity, HTML/CSS</p>
 
             <h3>Secondary Programming Languages</h3>
-            <p className="abt-text p-2">R, TypeScript, Julia, SQL, Bash</p>
+            <p>
+              <i>these are languages i've used in passing</i>
+            </p>
+            <p className="abt-text p-2 ms-2">R, TypeScript, Julia, SQL, Bash</p>
 
             
 
@@ -142,6 +148,9 @@ const About: React.FC = () => {
             <h4>
               NC State Computer Science Graduate
             </h4>
+            <p>
+              <i>click a class to learn more</i>
+            </p>
             <ul className="class-list mb-4">
               <li><a href="https://www.csc.ncsu.edu/courses/outcomes.php?uniq_id=14000030" target="_blank" rel="noreferrer">Software Engineering</a></li>
               <li><a href="https://www.engineeringonline.ncsu.edu/course/csc-216-software-development-fundamentals/" target="_blank" rel="noreferrer">Object-Oriented Design in Java</a></li>

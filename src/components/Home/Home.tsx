@@ -54,7 +54,7 @@ const Home: React.FC = () => {
         <Row className="justify-content-center" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
           <Col md="auto">
             <div className="button-group">
-              <Link to="contact" className="flat-button">CONTACT ME</Link>
+              <Link to="about" className="flat-button">ABOUT ME</Link>
               <Link to="projects" className="flat-button">MY PROJECTS</Link>
             </div>
           </Col>
