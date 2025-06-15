@@ -2,8 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './index.css'
 import logoImg from '../../assets/logo.png';
-// Removed the Row import as it's no longer used here
-// import { Row } from 'react-bootstrap';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar: React.FC = () => {
 
@@ -45,7 +45,26 @@ const Navbar: React.FC = () => {
         >
           Contact
         </NavLink>
+        
 
+      </div>
+      <div className="ms-auto d-flex align-items-center pe-4 gap-4">
+        <a
+          href="https://www.linkedin.com/in/john-butterfield-37a8441b5/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-decoration-none"
+        >
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" size="2x" />
+        </a>
+        <a
+          href="https://github.com/smugdrip"
+          target="_blank"
+          rel="noreferrer"
+          className="text-decoration-none"
+        >
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" size="2x" />
+        </a>
       </div>
     </nav>
   );
