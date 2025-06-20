@@ -106,12 +106,73 @@
   transform: translateY(-4px);
 }
 
-.anime {
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-1,
+.fade-in-2,
+.fade-in-3,
+.fade-in-4,
+.fade-in-5,
+.fade-in-6,
+.fade-in-7 {
   animation-name: fadeIn;
   animation-duration: 2s;
-  animation-delay: .75s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+.fade-in-1 { animation-delay: 0.75s; }
+.fade-in-2 { animation-delay: 1s; }
+.fade-in-3 { animation-delay: 1.25s; }
+.fade-in-4 { animation-delay: 1.5s; }
+.fade-in-5 { animation-delay: 1.75s; }
+.fade-in-6 { animation-delay: 2s; }
+.fade-in-7 { animation-delay: 2.25s; }
+
+.resume-link {
+  font-family: 'Coolvetica', sans-serif;
+  font-weight: lighter;
+}
+
+.resume-link a:hover {
+  color: #FFFFFF;
+}
+
+.language-text {
+  font-family: 'Coolvetica', sans-serif;
+  font-size: 1.1rem;
+  padding-left: 25px;
+  color: #e0e0e0;
+}
+
+.course-list a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.course-list a:hover {
+    color: #5ED4F4;
+}
+
+.course-list li::before {
+    content: '🎓';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #5ED4F4;
+    font-size: 1rem;
+}
+
+.fade-in-prime-7 { 
+    animation-delay: 2.6s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }

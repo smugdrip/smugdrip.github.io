@@ -38,7 +38,7 @@ h1 {
 
 h2 {
   color: #000000;
-  font-size: clamp(2rem, 3.75vw, 4.75vw);
+  font-size: clamp(1.75rem, 3vw, 4.5vw);
   font-family: 'Coolvetica';
   font-weight: 400;
   z-index: 0;
@@ -46,7 +46,7 @@ h2 {
 
 h3 {
   color: #000000;
-  font-size: clamp(1rem, 2vw, 4vw);
+  font-size: clamp(1.5rem, 2.5vw, 3vw); 
   font-family: 'Coolvetica';
   font-weight: 400;
   z-index: 0;
@@ -54,11 +54,12 @@ h3 {
 
 h4 {
   color: #000000;
-  font-size: clamp(1rem, 1.75vw, 3vw);
+  font-size: clamp(1.25rem, 2vw, 2.5vw);
   font-family: 'Coolvetica';
   font-weight: 400;
   z-index: 0;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
