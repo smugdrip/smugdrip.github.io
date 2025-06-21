@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.tsx';
 import { HashRouter } from 'react-router-dom';
+import ScrollToTop from './utility/Scroll.tsx';
 
 const container = document.getElementById('root');
 
@@ -18,6 +19,7 @@ const root = createRoot(container);
 root.render(
   <StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <App />
     </HashRouter>
   </StrictMode>,

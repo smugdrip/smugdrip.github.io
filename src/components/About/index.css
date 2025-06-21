@@ -16,33 +16,24 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in-1,
-.fade-in-2 {
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
+.fade-in-prime-1 { animation-delay: 0.8s; }
+.fade-in-prime-2 { animation-delay: 1.1s; }
+.fade-in-prime-3 { animation-delay: 1.4s; }
+.fade-in-prime-4 { animation-delay: 1.7s; }
+.fade-in-prime-5 { animation-delay: 2.0s; }
+.fade-in-prime-6 { animation-delay: 2.3s; }
 
-.fade-in-1 { animation-delay: 0.25s; }
-.fade-in-2 { animation-delay: 0.5s; }
-
-
-.resume-link {
-  font-family: 'Coolvetica', sans-serif;
-  font-weight: lighter;
-}
-
-.resume-link a:hover {
-  color: #FFFFFF;
-}
-
-.language-text {
-  font-family: 'Coolvetica', sans-serif;
-  font-size: 1.1rem;
-  padding-left: 25px;
-  color: #e0e0e0;
+.fade-in-prime-1,
+.fade-in-prime-2,
+.fade-in-prime-3,
+.fade-in-prime-4,
+.fade-in-prime-5,
+.fade-in-prime-6 {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .course-list a {

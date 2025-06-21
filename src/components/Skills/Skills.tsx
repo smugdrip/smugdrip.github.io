@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
 
     return (
         <Layout>
-            <Container className="projects-container">
+            <Container>
                 <Row>
                     <Col>
                         <h1 className="text-center p-4">
@@ -27,15 +27,14 @@ const Skills: React.FC = () => {
                          <h3 className="text-center fade-in-prime-1 resume-link pb-3">
                            You can download my resume{" "}
                            <a href="/assets/JohnButterfieldResume.pdf" download>
-                             here
-                           </a>!
+                             here!
+                           </a>
                          </h3>
                     </Col>
                 </Row>
                 
                 <hr className="fade-in-prime-2 project-divider" />
 
-                {/* --- Skills & Cube Layout --- */}
                 <Row>
                     <Col lg={7} className="project-entry fade-in-prime-3">
                         <div className="project-card h-100">
@@ -43,10 +42,12 @@ const Skills: React.FC = () => {
                                 <FontAwesomeIcon icon={faCode} className="project-icon" /> Languages & Concepts
                             </h2>
                             <h4 className="tech-heading">Primary Languages</h4>
-                            <p className="abt-text ps-3">C, Python, Java, JavaScript, Solidity, HTML/CSS</p>
+                            <p className="ps-5"><i>these are languages i've used for large projects</i></p>
+                            <p className="abt-text ps-3">C, Python, Java, JavaScript, Solidity, HTML/CSS, SQL</p>
 
                             <h4 className="tech-heading">Secondary Languages</h4>
-                            <p className="abt-text ps-3">R, TypeScript, Julia, SQL, Bash, C#, C++</p>
+                            <p className="ps-5"><i>these are languages i've used in passing</i></p>
+                            <p className="abt-text ps-3">R, TypeScript, Julia, Bash, C#, C++</p>
 
                             <h4 className="tech-heading">General Concepts</h4>
                             <ul className="tech-list">
@@ -89,21 +90,38 @@ const Skills: React.FC = () => {
                                     <h4 className="tech-heading">Developer Tools</h4>
                                     <ul className="tech-list">
                                         <li>Git & GitHub</li>
-                                        <li>Linux & Docker</li>
+                                        <li>Linux & Bash Scripting</li>
+                                        <li>Docker</li>
                                         <li>AWS (S3, Lambda, IoT Core)</li>
-                                        <li>MySQL, MQTT</li>
+                                        <li>MySQL</li>
+                                        <li>MQTT</li>
                                         <li>HardHat & MetaMask</li>
                                     </ul>
                                 </Col>
                                 <Col md={6}>
-                                    <h4 className="tech-heading">Testing & Soft Skills</h4>
+                                    <h4 className="tech-heading">Software Testing</h4>
                                     <ul className="tech-list">
                                         <li>Unit Testing (JUnit, Mocha/Chai)</li>
-                                        <li>System & Acceptance Testing</li>
-                                        <li>Teamwork & Leadership</li>
-                                        <li>Ethical Reasoning</li>
-                                        <li>Professional Communication</li>
+                                        <li>System Testing</li>
+                                        <li>User-Story Based Testing</li>
+                                        <li>Use Case Validation</li>
                                     </ul>
+                                </Col>
+                                <Col md={6}>
+                                    <h4 className="tech-heading">Soft Skills</h4>
+                                    <h3>Soft Skills</h3>
+
+                                    <p className="abt-text p-2">
+
+                                        Experienced in teamwork, leadership, and professional communication through academic projects and real-world roles.
+
+                                        Strong foundation in ethical reasoning, problem-solving, and collaboration.
+
+                                        Comfortable working with diverse teams and communicating across technical and non-technical audiences.
+
+                                    </p>
+
+
                                 </Col>
                             </Row>
                         </div>
