@@ -21,21 +21,19 @@
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
-body {
+html, body {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
   background-image: url('./assets/background.png');
   background-size: cover;
-  background-attachment: fixed ;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
-  overscroll-behavior: none;
 }
 
-html {
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
-  overscroll-behavior: none;
-}
 
 
 h1 {
