@@ -1,72 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './index.css'
-import logoImg from '../../assets/logo.png';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import logoImg from '../../assets/logo.png';
+import './index.css';
 
 const Navbar: React.FC = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  // This function is perfect for dynamically setting the active class.
+  const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `nav-link px-2 ${isActive ? 'text-info fw-semibold' : 'text-light'}`;
 
   return (
-    <nav className={"navbar navbar-expand navbar-dark bg-dark mb-4 ps-3 "}>
-      <NavLink to="/" className="navbar-brand">
-        <img src={logoImg} width="35" height="35" alt="My Portfolio"/>
-      </NavLink>
-      <div className="d-flex p-2 flex-wrap">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-          `nav-link px-2 ${isActive ? 'text-info fw-semibold' : 'text-light'}`
-          }
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-          `nav-link px-2 ${isActive ? 'text-info fw-semibold' : 'text-light'}`
-          }
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-          `nav-link px-2 ${isActive ? 'text-info fw-semibold' : 'text-light'}`
-          }
-        >
-          Projects
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-          `nav-link px-2 ${isActive ? 'text-info fw-semibold' : 'text-light'}`
-          }
-        >
-          Contact
-        </NavLink>
-        
+    <BootstrapNavbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      className="mb-4 ps-3"
+      expanded={expanded}
+      onToggle={() => setExpanded(!expanded)}
+    >
+      <BootstrapNavbar.Brand as={NavLink} to="/" onClick={() => setExpanded(false)}>
+        <img src={logoImg} width="35" height="35" alt="My Portfolio" />
+      </BootstrapNavbar.Brand>
 
-      </div>
-      <div className="ms-auto d-flex align-items-center pe-4 gap-4">
-        <a
-          href="https://www.linkedin.com/in/john-butterfield-37a8441b5/"
-          target="_blank"
-          rel="noreferrer"
-          className="text-decoration-none"
-        >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" size="2x" />
-        </a>
-        <a
-          href="https://github.com/smugdrip"
-          target="_blank"
-          rel="noreferrer"
-          className="text-decoration-none"
-        >
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" size="2x" />
-        </a>
-      </div>
-    </nav>
+      <BootstrapNavbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        className="me-3"
+      />
+
+      <BootstrapNavbar.Collapse id="responsive-navbar-nav">
+        <Nav className="me-auto flex-column flex-lg-row align-items-center align-items-lg-center w-100 gap-2 gap-lg-0">
+          {[
+            { to: '/', label: 'Home' },
+            { to: '/about', label: 'About' },
+            { to: '/skills', label: 'Skills' },
+            { to: '/projects', label: 'Projects' },
+            { to: '/contact', label: 'Contact' },
+          ].map(({ to, label }) => (
+            // Directly use NavLink from react-router-dom here
+            <NavLink
+              key={label}
+              to={to}
+              className={getNavLinkClass} // Now this works as expected
+              onClick={() => setExpanded(false)} // Close navbar on link click
+            >
+              {label}
+            </NavLink>
+          ))}
+
+          {/* Social icons, still Nav.Link as they are external */}
+          <Nav.Link
+            href="https://www.linkedin.com/in/john-butterfield-37a8441b5/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-light"
+            onClick={() => setExpanded(false)}
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+          </Nav.Link>
+          <Nav.Link
+            href="https://github.com/smugdrip"
+            target="_blank"
+            rel="noreferrer"
+            className="text-light"
+            onClick={() => setExpanded(false)}
+          >
+            <FontAwesomeIcon icon={faGithub} size="lg" />
+          </Nav.Link>
+        </Nav>
+      </BootstrapNavbar.Collapse>
+    </BootstrapNavbar>
   );
 };
 

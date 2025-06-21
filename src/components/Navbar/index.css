@@ -6,3 +6,10 @@ a:hover svg {
   color: #ffffff;
   transition: color 0.3s ease;
 }
+
+.social-icon {
+  transition: transform 0.2s ease;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}

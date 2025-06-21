@@ -19,11 +19,13 @@ const Projects: React.FC = () => {
                         <h1 className="text-center p-4">
                             <AnimatedLetters strArray={projectsArray} idx={0} />
                         </h1>
-                        <p className="text-center fade-in-1 project-subtitle">
+                        <h4 className="text-center fade-in-1 project-subtitle">
                             Take a look at some of my favorite projects I've developed!
-                        </p>
+                        </h4>
                     </Col>
                 </Row>
+
+                <hr className="fade-in-prime-1 project-divider" />
 
                 {/* --- Project 1: FreeFlow Forum --- */}
                 <Row className="project-entry fade-in-prime-1">

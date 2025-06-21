@@ -26,7 +26,11 @@ body {
   background-size: cover;
   background-attachment: fixed ;
   background-repeat: no-repeat;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  overscroll-behavior: none;
 }
+
 
 h1 {
   color: #000000;
