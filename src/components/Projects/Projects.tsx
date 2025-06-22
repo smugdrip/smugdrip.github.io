@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { faCube, faLink, faCodeBranch, faLock, faCamera, faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
+import { faFileContract, faCube, faLink, faCodeBranch, faLock, faCamera, faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../Layout/Layout';
@@ -66,6 +66,25 @@ const Projects: React.FC = () => {
                                 <li><strong>Languages:</strong> Python</li>
                                 <li><strong>Libraries:</strong> scikit-learn, Pandas, NumPy, Matplotlib, Seaborn</li>
                                 <li><strong>Techniques:</strong> Feature Engineering, Model Evaluation, Pipeline Design</li>
+                            </ul>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className="project-entry fade-in-prime-1">
+                    <Col>
+                        <div className="project-card">
+                            <h2 className="project-title">
+                                <FontAwesomeIcon icon={faFileContract} className="project-icon" /> AI-Powered Terms & Conditions Summarizer
+                            </h2>
+                            <p className="project-desc">
+                                A user-friendly web application designed to demystify complex legal documents. This tool allows users to paste the full text of any Terms and Conditions or privacy policy and receive a concise, easy-to-understand summary. The core of the project is its integration with the Google Gemini API, to which a carefully engineered prompt is sent. The model not only summarizes the document but also performs a detailed analysis to extract and highlight all clauses related to data collection, usage, sharing, and privacy, empowering users to make informed decisions about their data.
+                            </p>
+                            <h4 className="tech-heading">Technologies Used:</h4>
+                            <ul className="tech-list">
+                                <li><strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3</li>
+                                <li><strong>API:</strong> Google Gemini API</li>
+                                <li><strong>Frameworks/Libraries:</strong> Tailwind CSS</li>
+                                <li><strong>Techniques:</strong> API Integration, Prompt Engineering, Asynchronous JavaScript (Fetch API, async/await), DOM Manipulation</li>
                             </ul>
                         </div>
                     </Col>
