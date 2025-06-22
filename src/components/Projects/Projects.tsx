@@ -49,6 +49,28 @@ const Projects: React.FC = () => {
                         </div>
                     </Col>
                 </Row>
+                <Row className="project-entry fade-in-prime-1">
+                    <Col>
+                        <div className="project-card">
+                            <h2 className="project-title">
+                                <FontAwesomeIcon icon={faProjectDiagram} className="project-icon" /> Loan Risk Machine Learning Classifier
+                            </h2>
+                            <p className="project-desc">
+                                A machine learning pipeline that predicts loan default risk based on applicant data such as income, age, ownership status, and employment history. 
+                                The project uses a Random Forest classifier with preprocessing, one-hot encoding, and scaling handled via a clean scikit-learn pipeline. 
+                                I also experimented with feature engineering by introducing an exponential income-employment interaction term to improve performance. 
+                                The model was evaluated using accuracy, classification reports, confusion matrices, and ROC/precision-recall curves to ensure robust performance.
+                            </p>
+                            <h4 className="tech-heading">Technologies Used:</h4>
+                            <ul className="tech-list">
+                                <li><strong>Languages:</strong> Python</li>
+                                <li><strong>Libraries:</strong> scikit-learn, Pandas, NumPy, Matplotlib, Seaborn</li>
+                                <li><strong>Techniques:</strong> Feature Engineering, Model Evaluation, Pipeline Design</li>
+                            </ul>
+                        </div>
+                    </Col>
+                </Row>
+
 
                 <hr className="fade-in-prime-1 project-divider" />
 
