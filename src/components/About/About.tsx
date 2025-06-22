@@ -22,9 +22,33 @@ const About: React.FC = () => {
                 
                 <hr className="fade-in-prime-1 project-divider" />
 
-                <Row>
+                <Row className="anime project-card">
                     <Col className="anime pt-4">
-                        <h3>How did I get interested in Software Development?</h3>
+                        <h3 className="fade-in-prime-1 project-title">Who am I anyway?</h3>
+
+                        <p className='abt-text'>
+                            Hi! My Name is John Butterfield and I am a recent graduate from NC State with a degree in Computer Science. My specialty lies in full stack development and designing large
+                            systems with different interacting sub-systems. I see myself as a generalist software developer with experience in Frontend, Backend, and Databases. I have created multiple
+                            full-stack  applications for my coursework at university and am excited to apply this knowledge in the real world. I also have experience with AI/Machine Learning
+                            algorithms, Computer Networking, Video Game Design, Data Ethics, and Technical Communication.
+                        </p>
+                        <p className='abt-text'>
+                            Some of my hobbies include playing improv piano, road biking, video games, and old sci-fi movies. If I could describe myself in one sentence I would say that I am an open-minded, independent
+                            thinker who loves to understand things at a deep level, and that I'm at my best when I have something technical to focus on. I tend to have high standards for myself and those around me
+                            in the workplace but I still am understanding of how others act. I value fairness and intelligence and strive to embody a version of myself that is hardworking, sharp, and focused on the
+                            future.
+                        </p>
+
+                    </Col>
+                </Row>
+
+                <br></br>
+
+                <hr className="fade-in-prime-2 project-divider" />
+
+                <Row className="anime project-card">
+                    <Col className="anime pt-4">
+                        <h3 className="fade-in-prime-2 project-title">How did I get interested in Software Development?</h3>
                         <p className="abt-text">
                         I was first introduced to programming at 12, when I joined my middle school’s programming club. We used Scratch, 
                         a block-based, visual language that made it easy to create simple games by dragging together logic “building blocks.”
@@ -47,6 +71,8 @@ const About: React.FC = () => {
 
                     </Col>
                 </Row>
+                <br></br>
+                
             </Container>
         </Layout>
     );

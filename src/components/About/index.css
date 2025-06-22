@@ -54,3 +54,11 @@
     color: #5ED4F4;
     font-size: 1rem;
 }
+
+.project-card {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}

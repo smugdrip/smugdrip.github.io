@@ -38,14 +38,12 @@ const Navbar: React.FC = () => {
             { to: '/about', label: 'About' },
             { to: '/skills', label: 'Skills' },
             { to: '/projects', label: 'Projects' },
-            { to: '/contact', label: 'Contact' },
           ].map(({ to, label }) => (
-            // Directly use NavLink from react-router-dom here
             <NavLink
               key={label}
               to={to}
-              className={getNavLinkClass} // Now this works as expected
-              onClick={() => setExpanded(false)} // Close navbar on link click
+              className={getNavLinkClass}
+              onClick={() => setExpanded(false)}
             >
               {label}
             </NavLink>
@@ -56,7 +54,7 @@ const Navbar: React.FC = () => {
             href="https://www.linkedin.com/in/john-butterfield-37a8441b5/"
             target="_blank"
             rel="noreferrer"
-            className="text-light"
+            className="text-light p-3"
             onClick={() => setExpanded(false)}
           >
             <FontAwesomeIcon icon={faLinkedin} size="lg" />
