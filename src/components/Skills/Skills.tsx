@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Layout from '../Layout/Layout';
 import { faJava, faHtml5, faPython, faReact, faJsSquare, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faIdCard, faCode, faToolbox, faUniversity } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faToolbox, faUniversity } from '@fortawesome/free-solid-svg-icons';
 
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import tuffy from '../../assets/tuffy.png';
@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
                         </h1>
                          <h3 className="text-center fade-in-prime-1 resume-link pb-3">
                            You can download my resume{" "}
-                           <a href="/assets/JohnButterfieldResume.pdf" download>
+                           <a href="/assets/John-Butterfield-Resume.pdf" download>
                              here!
                            </a>
                          </h3>
@@ -152,6 +152,7 @@ const Skills: React.FC = () => {
                             <li><a href="https://www.csc.ncsu.edu/courses/outcomes.php?uniq_id=17500046" target="_blank" rel="noreferrer">IoT Systems</a></li>
                             <li><a href="https://www.csc.ncsu.edu/courses/outcomes.php?uniq_id=500008" target="_blank" rel="noreferrer">Ethics in Computing</a></li>
                             <li><a href="https://wolfware.ncsu.edu/courses/details/?sis_id=SIS:2021:8:1:PHI:227:001" target="_blank" rel="noreferrer">Data Ethics</a></li>
+                            <li><a href="https://wolfware.ncsu.edu/courses/details/?sis_id=SIS:2022:8:1:BUS:340:305" target="_blank" rel="noreferrer">Information Systems Management</a></li>
                           </ul>
                         </div>
                     </Col>

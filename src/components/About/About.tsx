@@ -13,10 +13,13 @@ const About: React.FC = () => {
       <Layout>
           <Container>
               <Row>
-                  <Col>
-                    <h1 className="text-center p-4">
+                    <Col>
+                        <h1 className="text-center p-4">
                             <AnimatedLetters strArray={abtMeArray} idx={0} />
                         </h1>
+                        <h4 className="text-center fade-in-1 project-subtitle">
+                            Take a moment to learn a little more about me here!
+                        </h4>
                     </Col>
                 </Row>
                 
@@ -27,8 +30,8 @@ const About: React.FC = () => {
                         <h3 className="fade-in-prime-1 project-title">Who am I anyway?</h3>
 
                         <p className='abt-text'>
-                            Hi! My Name is John Butterfield and I am a recent graduate from NC State with a degree in Computer Science. My specialty lies in full stack development and designing large
-                            systems with different interacting sub-systems. I see myself as a generalist software developer with experience in Frontend, Backend, and Databases. I have created multiple
+                            Hi! My name is John Butterfield, and I’m a recent Computer Science graduate from NC State. I specialize in full-stack development and designing modular systems that integrate databases, cloud services, and user-facing interfaces.
+                            I see myself as a generalist software developer with experience in Frontend, Backend, and Databases. I have created multiple
                             full-stack  applications for my coursework at university and am excited to apply this knowledge in the real world. I also have experience with AI/Machine Learning
                             algorithms, Computer Networking, Video Game Design, Data Ethics, and Technical Communication.
                         </p>
